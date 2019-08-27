@@ -1,0 +1,15 @@
+include ./includes/header.jade
+
++custom-header("Cluckr | Sign In", false, "signin.css")
+
+article 
+
+    h2 Sign In
+
+    form(action="/sign_in" method="POST")
+        
+        .form-group 
+            label(for="username") Username
+            input(type="text", name="username", placeholder="cool_username", autocomplete="off")
+
+        input.as-button(type="submit", value="Sign In")

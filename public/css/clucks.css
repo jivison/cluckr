@@ -1,0 +1,94 @@
+.menu-items .signin {
+    margin-right: 16px;
+}
+
+.clucks {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+}
+
+.cluck {
+    border: 2px solid black;
+    margin: 1em;
+    padding: 1em;
+    width: 90%;
+    border-radius: 1em;
+}
+
+.cluck .content {
+    margin-left: 8%;
+    margin-right: 3%;
+}
+
+.cluck .content p {
+    font-size: 1.4em;
+    padding-bottom: 3%;
+    line-height: 1.2;
+}
+
+.cluck .image img {
+    width: 100%;
+    border-radius: 0.3em;
+    border: 2px lightgrey solid;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+.user-info h2 {
+    font-size: 1.5em;
+}
+
+.timestamp {
+    flex: 1;
+    padding-left: 5%;
+    font-size: 1em;
+}
+
+img.icon {
+    width: 8%;
+}
+
+.tag {
+    color: rgb(14, 98, 126);
+}
+
+article {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ghost {
+    flex: 0.5;
+}
+
+.tags {
+    flex: 0.5;
+    border: 2px solid black;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    height: 95vh;
+    text-align: center;
+    
+}
+
+.tags p {
+    font-size: 1.5em;
+    line-height: 2;
+}
+
+.tags .count {
+    font-size: 1em;   
+}
+
+.tags h1 {
+    font-size: 2.5em;
+}
