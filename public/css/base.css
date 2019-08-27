@@ -1,0 +1,29 @@
+@import url("./reset.css");
+@import url("https://fonts.googleapis.com/css?family=Red+Hat+Text&display=swap");
+
+@import url("./header.css");
+
+html {
+    box-sizing: border-box;
+    font-family: "Red Hat Text", sans-serif;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+button,
+.as-button {
+    background-color: transparent;
+    color: black;
+    padding: 1em 3em;
+    border-radius: 2em;
+    border: 1px solid black;
+    font-size: 1em;
+}
+
+button:hover,
+.as-button:hover {
+    background-color: rgb(241, 241, 241);
+}

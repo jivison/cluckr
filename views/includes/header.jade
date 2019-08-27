@@ -1,17 +1,37 @@
-mixin custom-header(title, nav)
+mixin custom-header(title, nav, css)
     <!DOCTYPE html>
     html(lang="en")
         head
             meta(charset="UTF-8")
             meta(name="viewport", content="width=device-width, initial-scale=1.0")
             meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+            link(rel="stylesheet", href="/css/base.css")
+
+            if css
+                link(rel="stylesheet", href=`/css/${css}`)
+
             title= title
         body
             if nav
                 .nav
-                    if username
-                        form(action="/sign_out" method="POST")
-                            input(type="submit", value="Sign Out")
-                    else
-                        form(action="/sign_in" method="GET")
-                            input(type="submit", value="Sign In")
+                    .branding
+                        a(href="/clucks")
+                            img(src="/images/chicken.svg", alt="alt", style="height: 5vh")
+                        p(style="font-size: 1.1em; ") Cluckr
+                    
+                    .menu-items
+                    
+                        button(onclick='window.location.href="/clucks/new"') Cluck!
+
+
+                        if username
+                            .signout
+                                h5.username= username
+                                form(action="/sign_out" method="POST")
+                                    input.as-button(type="submit", value="Sign Out")
+                        else
+                            .signin
+                                form(action="/sign_in" method="GET")
+                                    input.as-button(type="submit", value="Sign In")
+

@@ -1,0 +1,19 @@
+include ../includes/header
+
++custom-header("Cluckr | New", true, "new.css")
+
+article
+
+    h2 New Cluck
+
+    form(action="/clucks/new" method="POST", style="flex:1;")
+        div.form-group
+            label(for="content") Content
+            textarea(name="content", placeholder="What's on your mind?", cols="72", rows="5")
+            //- textarea#(name="", cols="30", rows="10")
+
+        div.form-group
+            label(for="image_url") Image Url
+            input(type="text", name="imageUrl", autocomplete="off", placeholder="https://example.com/path/to/image")
+
+        input.as-button(type="submit", value="Cluck!")
