@@ -1,0 +1,29 @@
+{
+  "name": "cluckr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jivison/cluckr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jivison/cluckr/issues"
+  },
+  "homepage": "https://github.com/jivison/cluckr#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jade": "^1.11.0",
+    "knex": "^0.19.2",
+    "morgan": "^1.9.1",
+    "pg": "^7.12.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
