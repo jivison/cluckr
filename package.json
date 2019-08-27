@@ -18,6 +18,7 @@
     },
     "homepage": "https://github.com/jivison/cluckr#readme",
     "dependencies": {
+        "cookie-parser": "^1.4.4",
         "express": "^4.17.1",
         "jade": "^1.11.0",
         "knex": "^0.19.2",

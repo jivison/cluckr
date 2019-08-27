@@ -1,0 +1,17 @@
+mixin custom-header(title, nav)
+    <!DOCTYPE html>
+    html(lang="en")
+        head
+            meta(charset="UTF-8")
+            meta(name="viewport", content="width=device-width, initial-scale=1.0")
+            meta(http-equiv="X-UA-Compatible", content="ie=edge")
+            title= title
+        body
+            if nav
+                .nav
+                    if username
+                        form(action="/sign_out" method="POST")
+                            input(type="submit", value="Sign Out")
+                    else
+                        form(action="/sign_in" method="GET")
+                            input(type="submit", value="Sign In")
